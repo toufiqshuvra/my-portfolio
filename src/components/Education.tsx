@@ -30,11 +30,12 @@ const Education = () => {
 
         {/* Heading */}
         <div className="text-center mb-16 animate-slide-up">
+          <span className="section-kicker">Learning Path</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Education</span>
           </h2>
 
-          <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <div className="section-underline"></div>
 
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Academic background in Computer Science and Engineering with strong foundations in software development, systems design, and modern web technologies.
@@ -47,14 +48,14 @@ const Education = () => {
           {education.map((edu, index) => (
             <Card
               key={index}
-              className="glass-card p-8 hover:shadow-glow transition-all duration-300 animate-slide-up"
+              className="glass-card interactive-card group p-8 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
 
               <div className="flex items-start gap-4">
 
                 {/* Icon */}
-                <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="icon-tile">
                   <GraduationCap className="h-8 w-8 text-primary" />
                 </div>
 

@@ -64,11 +64,12 @@ const Projects = () => {
 
         {/* Heading */}
         <div className="text-center mb-16 animate-slide-up">
+          <span className="section-kicker">Selected Builds</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="text-gradient">Projects</span>
           </h2>
 
-          <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <div className="section-underline"></div>
 
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Production-grade web applications built with modern frontend technologies including React, Next.js, Svelte, CMS systems, and scalable enterprise architectures.
@@ -81,7 +82,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="glass-card p-6 hover:shadow-glow transition-all duration-300 group animate-slide-up"
+              className="glass-card interactive-card p-6 group animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
 
@@ -90,7 +91,7 @@ const Projects = () => {
 
                 <Badge
                   variant="secondary"
-                  className="bg-accent/10 text-accent hover:bg-accent/20 border-accent/20"
+                  className="chip-hover bg-accent/10 text-accent hover:bg-accent/20 border-accent/20"
                 >
                   {project.category}
                 </Badge>
@@ -101,7 +102,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Live Project Link"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
                   >
                     <ExternalLink className="h-5 w-5" />
                   </a>
@@ -125,7 +126,7 @@ const Projects = () => {
                   <Badge
                     key={i}
                     variant="outline"
-                    className="border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                    className="chip-hover border-border/50 text-muted-foreground hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
                   >
                     {tech}
                   </Badge>

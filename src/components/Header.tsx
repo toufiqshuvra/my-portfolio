@@ -18,15 +18,15 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-background/85 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-background/85 shadow-[0_10px_35px_hsl(0_0%_0%/0.18)] backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12">
         <a
           href="#home"
-          className="text-base font-bold text-foreground transition-colors hover:text-primary sm:text-lg"
+          className="group text-base font-bold text-foreground transition-colors hover:text-primary sm:text-lg"
           onClick={closeMenu}
           aria-label="Go to home section"
         >
-          Toufiqul Karim
+          Toufiqul <span className="text-primary transition-colors group-hover:text-accent">Karim</span>
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
@@ -34,14 +34,14 @@ const Header = () => {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-primary"
+              className="nav-hover-link"
             >
               {item.label}
             </a>
           ))}
           <a
             href={contactLink.href}
-            className="ml-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            className="ml-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             {contactLink.label}
           </a>
@@ -51,7 +51,7 @@ const Header = () => {
           type="button"
           variant="ghost"
           size="icon"
-          className="lg:hidden"
+          className="rounded-full transition-transform hover:scale-105 lg:hidden"
           onClick={() => setIsOpen((current) => !current)}
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
@@ -63,8 +63,8 @@ const Header = () => {
 
       <nav
         id="mobile-navigation"
-        className={`border-t border-border/50 bg-background/95 px-4 py-3 shadow-elegant lg:hidden ${
-          isOpen ? "block" : "hidden"
+        className={`border-t border-border/50 bg-background/95 px-4 py-3 shadow-elegant transition-all duration-300 lg:hidden ${
+          isOpen ? "block animate-slide-up" : "hidden"
         }`}
         aria-label="Mobile navigation"
       >
@@ -73,7 +73,7 @@ const Header = () => {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-primary"
+              className="nav-hover-link"
               onClick={closeMenu}
             >
               {item.label}
@@ -81,7 +81,7 @@ const Header = () => {
           ))}
           <a
             href={contactLink.href}
-            className="rounded-full bg-primary px-3 py-2 text-center text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            className="rounded-full bg-primary px-3 py-2 text-center text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             onClick={closeMenu}
           >
             {contactLink.label}

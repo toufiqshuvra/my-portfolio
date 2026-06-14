@@ -7,10 +7,11 @@ const About = () => {
 
         {/* Heading */}
         <div className="text-center mb-16 animate-slide-up">
+          <span className="section-kicker">Who I Am</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <div className="section-underline"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -18,7 +19,7 @@ const About = () => {
           {/* LEFT - Summary */}
           <div className="animate-slide-up">
 
-            <Card className="glass-card p-8 shadow-elegant">
+            <Card className="glass-card interactive-card p-8 shadow-elegant">
 
               <h3 className="text-2xl font-bold mb-4 text-primary">
                 Professional Summary
@@ -45,10 +46,10 @@ const About = () => {
           <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
 
             {/* Frontend */}
-            <Card className="glass-card p-6 hover:shadow-glow transition-all duration-300">
+            <Card className="glass-card interactive-card group p-6">
               <div className="flex items-start gap-4">
 
-                <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="icon-tile">
                   <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
@@ -67,10 +68,10 @@ const About = () => {
             </Card>
 
             {/* UI/UX */}
-            <Card className="glass-card p-6 hover:shadow-glow transition-all duration-300">
+            <Card className="glass-card interactive-card group p-6">
               <div className="flex items-start gap-4">
 
-                <div className="bg-accent/10 p-3 rounded-lg">
+                <div className="icon-tile bg-accent/10 group-hover:bg-accent/20">
                   <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                   </svg>
@@ -89,10 +90,10 @@ const About = () => {
             </Card>
 
             {/* WordPress / CMS */}
-            <Card className="glass-card p-6 hover:shadow-glow transition-all duration-300">
+            <Card className="glass-card interactive-card group p-6">
               <div className="flex items-start gap-4">
 
-                <div className="bg-primary/10 p-3 rounded-lg">
+                <div className="icon-tile">
                   <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg>

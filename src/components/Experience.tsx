@@ -42,10 +42,11 @@ const Experience = () => {
 
         {/* Heading */}
         <div className="text-center mb-16 animate-slide-up">
+          <span className="section-kicker">Recent Work</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Work <span className="text-gradient">Experience</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <div className="section-underline"></div>
         </div>
 
         {/* Experience Card */}
@@ -53,13 +54,13 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="glass-card p-8 hover:shadow-glow transition-all duration-300 animate-slide-up"
+              className="glass-card interactive-card group p-8 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
 
                 {/* Icon */}
-                <div className="bg-primary/10 p-4 rounded-lg self-start">
+                <div className="icon-tile self-start p-4">
                   <Briefcase className="h-8 w-8 text-primary" />
                 </div>
 
@@ -98,7 +99,7 @@ const Experience = () => {
                       <Badge
                         key={i}
                         variant="secondary"
-                        className="bg-primary/10 text-primary hover:bg-primary/20 border-primary/20"
+                        className="chip-hover bg-primary/10 text-primary hover:bg-primary/20 border-primary/20"
                       >
                         {tech}
                       </Badge>

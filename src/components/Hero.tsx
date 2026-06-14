@@ -19,14 +19,14 @@ const Hero = () => {
           <div className="animate-slide-up text-center lg:text-left order-2 lg:order-1">
 
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium mb-4 shadow-[0_0_25px_hsl(var(--primary)/0.16)] transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/15">
                 Available for Software Engineering Opportunities
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Hi, I'm{" "}
-              <span className="text-gradient">Md. Toufiqul Karim Shuvra</span>
+              <span className="text-gradient">Md. Toufiqul Karim</span>
             </h1>
 
             <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium mb-6">
@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow group"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow group rounded-full transition-all hover:-translate-y-1 hover:shadow-[0_0_34px_hsl(var(--primary)/0.45)]"
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View My Work
@@ -53,7 +53,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-border hover:bg-secondary"
+                className="border-border hover:bg-secondary rounded-full transition-all hover:-translate-y-1 hover:border-primary/40 hover:text-primary"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Get In Touch
@@ -67,7 +67,7 @@ const Hero = () => {
                 href="https://github.com/toufiqshuvra"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
                 aria-label="GitHub Profile"
               >
                 <Github className="h-6 w-6" />
@@ -77,7 +77,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/md-toufiqul-karim-ba1952179/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin className="h-6 w-6" />
@@ -87,7 +87,7 @@ const Hero = () => {
                 href="https://www.credly.com/users/md-toufiqul-karim"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
                 aria-label="Certifications"
               >
                 <Award className="h-6 w-6" />
@@ -105,7 +105,7 @@ const Hero = () => {
               <img
                 src={profilePhoto}
                 alt="Md. Toufiqul Karim Shuvra - Frontend Software Engineer"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-elegant border-4 border-primary/20 hover:border-primary/40 transition-all duration-300"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-elegant border-4 border-primary/20 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-primary/50 hover:shadow-glow"
               />
 
             </div>
