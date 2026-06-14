@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Esther Group Website",
+      title: "Esther Group",
       url: "https://www.estherventures.com/",
       description:
         "Developed a modern, scalable CMS-driven platform with Svelte and Tailwind CSS, integrating Directus for content management and performance optimization.",
@@ -23,11 +23,11 @@ const Projects = () => {
 
     // NEW PROJECT 1
     {
-      title: "InNeed Cloud Website",
+      title: "InNeed Cloud",
       url: "https://inneedcloud.com/",
       description:
         "Developed and maintained the company portfolio website showcasing cloud-native solutions, services, and enterprise digital products with modern responsive UI.",
-      technologies: ["React.js", "Next.js", "Tailwind CSS", "UI/UX"],
+      technologies: ["Svelte", "Next.js", "Tailwind CSS", "UI/UX"],
       category: "Frontend"
     },
 
@@ -42,7 +42,17 @@ const Projects = () => {
     },
 
     {
+      title: "NokshaSemi",
+      url : "https://nokshasemi.com/",
+      description:
+        "Built a high-performance frontend application using Astro and Tailwind CSS, focusing on speed, responsiveness, and user experience.",
+      technologies: ["Astro", "Tailwind CSS", "UI/UX"],
+      category: "Frontend"
+    },
+
+    {
       title: "Million Al Minds",
+      url: "https://millionalminds.com/",
       description:
         "Built a high-performance frontend application using Svelte and Tailwind CSS, focusing on speed, responsiveness, and user experience.",
       technologies: ["Svelte", "Tailwind CSS", "UI/UX"],
