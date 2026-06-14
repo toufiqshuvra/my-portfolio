@@ -26,7 +26,7 @@ const Header = () => {
           onClick={closeMenu}
           aria-label="Go to home section"
         >
-          Toufiqul <span className="text-primary transition-colors group-hover:text-accent">Karim</span>
+          Toufiqul <span className="text-primary transition-colors group-hover:text-white">Karim</span>
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
