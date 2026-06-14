@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "shuvrasarker54@gmail.co",
-      href: "mailto:shuvrasarker54@gmail.co"
+      value: "shuvrasarker54@gmail.com",
+      href: "mailto:shuvrasarker54@gmail.com"
     },
     {
       icon: Phone,
@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Bangladesh",
+      value: "Gulshan 1, Dhaka, Bangladesh",
       href: null
     }
   ];
@@ -108,7 +108,7 @@ const Contact = () => {
               <Button 
                 className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground shadow-glow"
                 size="lg"
-                onClick={() => window.location.href = 'mailto:shuvrasarker54@gmail.co'}
+                onClick={() => window.location.href = 'mailto:shuvrasarker54@gmail.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Send Me an Email
