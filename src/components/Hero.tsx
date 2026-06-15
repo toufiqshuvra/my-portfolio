@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Award } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.png";
+
+const profilePhoto = "/images/md-toufiqul-karim-frontend-software-engineer-dhaka-bangladesh.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-24">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden py-24 sm:py-28"
+      aria-labelledby="home-heading"
+    >
 
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
@@ -12,11 +17,11 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+      <div className="site-container relative z-10">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-14">
 
           {/* LEFT */}
-          <div className="animate-slide-up text-center lg:text-left order-2 lg:order-1">
+          <div className="order-2 animate-slide-up text-center lg:order-1 lg:text-left">
 
             <div className="mb-6">
               <span className="inline-block px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium mb-4 shadow-[0_0_25px_hsl(var(--primary)/0.16)] transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/15">
@@ -24,23 +29,23 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 id="home-heading" className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">
               Hi, I'm{" "}
               <span className="text-gradient">Md. Toufiqul Karim</span>
             </h1>
 
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium mb-6">
+            <h2 className="mb-6 text-xl font-medium text-muted-foreground md:text-2xl lg:text-3xl">
               Frontend-Focused Software Engineer | <span className="text-primary font-semibold">React.js</span>,{" "}<span className="text-primary font-semibold">Next.js</span>, <span className="text-primary font-semibold">Svelte</span>, <span className="text-primary font-semibold">Astro</span> Developer
             </h2>
 
-            <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="mb-8 text-base leading-relaxed text-muted-foreground md:text-lg">
               Frontend-focused Software Engineer with 2+ years of experience in building scalable, SEO-optimized, and performance-driven web applications.
               Specialized in React.js, Next.js, Svelte, Astro, and TypeScript. Experienced in developing production-grade dashboards, enterprise UI systems, and cloud-integrated business solutions.
             </p>
 
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <div className="mb-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow group rounded-full transition-all hover:-translate-y-1 hover:shadow-[0_0_34px_hsl(var(--primary)/0.45)]"
@@ -68,7 +73,8 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
-                aria-label="GitHub Profile"
+                aria-label="Visit Md. Toufiqul Karim's GitHub frontend developer portfolio"
+                title="Md. Toufiqul Karim GitHub portfolio for React, Next.js, and frontend projects"
               >
                 <Github className="h-6 w-6" />
               </a>
@@ -78,7 +84,8 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
-                aria-label="LinkedIn Profile"
+                aria-label="Visit Md. Toufiqul Karim's LinkedIn frontend software engineer profile"
+                title="Md. Toufiqul Karim LinkedIn profile - Frontend Software Engineer in Dhaka, Bangladesh"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
@@ -88,7 +95,8 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
-                aria-label="Certifications"
+                aria-label="View Md. Toufiqul Karim's software engineering certifications on Credly"
+                title="Md. Toufiqul Karim Credly certifications for software engineering and cloud skills"
               >
                 <Award className="h-6 w-6" />
               </a>
@@ -97,15 +105,20 @@ const Hero = () => {
           </div>
 
           {/* RIGHT */}
-          <div className="animate-slide-up order-1 lg:order-2" style={{ animationDelay: '0.2s' }}>
+          <div className="order-1 animate-slide-up lg:order-2" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
 
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-pulse"></div>
 
               <img
                 src={profilePhoto}
-                alt="Md. Toufiqul Karim Shuvra - Frontend Software Engineer"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-elegant border-4 border-primary/20 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-primary/50 hover:shadow-glow"
+                alt="Md. Toufiqul Karim Shuvra, Frontend Software Engineer in Dhaka, Bangladesh specializing in React, Next.js, Svelte, Astro, and TypeScript portfolio development"
+                title="Md. Toufiqul Karim Shuvra, Frontend Software Engineer in Dhaka, Bangladesh"
+                width="512"
+                height="512"
+                loading="eager"
+                fetchPriority="high"
+                className="mx-auto w-full max-w-[18rem] rounded-2xl border-4 border-primary/20 shadow-elegant transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-primary/50 hover:shadow-glow sm:max-w-sm lg:max-w-md"
               />
 
             </div>

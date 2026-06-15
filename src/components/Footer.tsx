@@ -2,8 +2,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 px-6 border-t border-border/50 bg-background/95">
-      <div className="container mx-auto max-w-6xl">
+    <footer className="border-t border-border/50 bg-background/95 py-10" aria-label="Portfolio footer">
+      <div className="site-container">
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
 

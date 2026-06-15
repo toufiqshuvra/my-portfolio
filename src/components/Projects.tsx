@@ -69,13 +69,13 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
+    <section id="projects" className="section-shell" aria-labelledby="projects-heading">
+      <div className="site-container">
 
         {/* Heading */}
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="section-heading animate-slide-up">
           <span className="section-kicker">Selected Builds</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 id="projects-heading" className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="text-gradient">Projects</span>
           </h2>
 
@@ -87,17 +87,17 @@ const Projects = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid items-stretch gap-6 md:grid-cols-2">
 
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="glass-card interactive-card p-6 group animate-slide-up"
+              className="glass-card interactive-card group flex h-full flex-col p-5 animate-slide-up sm:p-6"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
 
               {/* Header */}
-              <div className="flex items-start justify-between mb-4">
+              <div className="mb-4 flex items-start justify-between gap-4">
 
                 <Badge
                   variant="secondary"
@@ -111,7 +111,8 @@ const Projects = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Live Project Link"
+                    aria-label={`View live ${project.title} ${project.category.toLowerCase()} project by Md. Toufiqul Karim`}
+                    title={`View live ${project.title} project built with ${project.technologies.join(", ")}`}
                     className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
                   >
                     <ExternalLink className="h-5 w-5" />
@@ -121,17 +122,17 @@ const Projects = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="mb-3 text-xl font-bold transition-colors group-hover:text-primary">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="mb-5 leading-relaxed text-muted-foreground">
                 {project.description}
               </p>
 
               {/* Tech stack */}
-              <div className="flex flex-wrap gap-2">
+              <div className="mt-auto flex flex-wrap gap-2">
                 {project.technologies.map((tech, i) => (
                   <Badge
                     key={i}

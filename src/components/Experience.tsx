@@ -36,14 +36,15 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-20 px-6 bg-gradient-to-b from-background to-secondary/20"
+      className="section-shell bg-gradient-to-b from-background to-secondary/20"
+      aria-labelledby="experience-heading"
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="site-container">
 
         {/* Heading */}
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="section-heading animate-slide-up">
           <span className="section-kicker">Recent Work</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 id="experience-heading" className="text-4xl md:text-5xl font-bold mb-4">
             Work <span className="text-gradient">Experience</span>
           </h2>
           <div className="section-underline"></div>
@@ -54,10 +55,10 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="glass-card interactive-card group p-8 animate-slide-up"
+              className="glass-card interactive-card group animate-slide-up p-6 sm:p-8"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex flex-col md:flex-row md:items-start gap-6">
+              <div className="flex flex-col gap-6 md:flex-row md:items-start">
 
                 {/* Icon */}
                 <div className="icon-tile self-start p-4">

@@ -43,11 +43,15 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-b from-background to-secondary/20">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-slide-up">
+    <section
+      id="contact"
+      className="section-shell bg-gradient-to-b from-background to-secondary/20"
+      aria-labelledby="contact-heading"
+    >
+      <div className="site-container">
+        <div className="section-heading animate-slide-up">
           <span className="section-kicker">Start a Conversation</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 id="contact-heading" className="text-4xl md:text-5xl font-bold mb-4">
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <div className="section-underline"></div>
@@ -57,21 +61,22 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="glass-card interactive-card p-8 animate-slide-up">
+        <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 lg:gap-8">
+          <Card className="glass-card interactive-card p-6 animate-slide-up sm:p-8">
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
             <div className="space-y-4">
               {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-center gap-4 rounded-lg p-2 transition-colors hover:bg-secondary/30 group">
+                <div key={index} className="group flex min-w-0 items-center gap-4 rounded-lg p-2 transition-colors hover:bg-secondary/30">
                   <div className="icon-tile">
                     <item.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">{item.label}</p>
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="font-medium transition-colors hover:text-primary"
+                        className="break-words font-medium transition-colors hover:text-primary"
+                        title={`Contact Md. Toufiqul Karim via ${item.label.toLowerCase()} for frontend software engineering work`}
                       >
                         {item.value}
                       </a>
@@ -84,7 +89,7 @@ const Contact = () => {
             </div>
           </Card>
 
-          <Card className="glass-card interactive-card p-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <Card className="glass-card interactive-card p-6 animate-slide-up sm:p-8" style={{ animationDelay: '0.1s' }}>
             <h3 className="text-2xl font-bold mb-6">Connect With Me</h3>
             <div className="space-y-4">
               {socialLinks.map((social, index) => (
@@ -93,6 +98,8 @@ const Contact = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Visit Md. Toufiqul Karim's ${social.label} profile for frontend software engineering work`}
+                  title={`Md. Toufiqul Karim ${social.label} profile - Frontend Software Engineer in Dhaka, Bangladesh`}
                   className="flex items-center gap-4 p-3 rounded-lg hover:bg-secondary/50 transition-all duration-200 hover:-translate-y-1 group"
                 >
                   <div className="icon-tile">

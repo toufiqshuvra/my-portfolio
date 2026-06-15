@@ -24,14 +24,15 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-20 px-6"
+      className="section-shell"
+      aria-labelledby="education-heading"
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="site-container">
 
         {/* Heading */}
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="section-heading animate-slide-up">
           <span className="section-kicker">Learning Path</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 id="education-heading" className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">Education</span>
           </h2>
 
@@ -43,16 +44,16 @@ const Education = () => {
         </div>
 
         {/* Education cards */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid items-stretch gap-6 md:grid-cols-2">
 
           {education.map((edu, index) => (
             <Card
               key={index}
-              className="glass-card interactive-card group p-8 animate-slide-up"
+              className="glass-card interactive-card group h-full p-6 animate-slide-up sm:p-8"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
 
-              <div className="flex items-start gap-4">
+              <div className="flex h-full items-start gap-4">
 
                 {/* Icon */}
                 <div className="icon-tile">

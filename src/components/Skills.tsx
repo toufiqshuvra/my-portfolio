@@ -74,14 +74,15 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 px-6 bg-gradient-to-b from-secondary/20 to-background"
+      className="section-shell bg-gradient-to-b from-secondary/20 to-background"
+      aria-labelledby="skills-heading"
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="site-container">
 
         {/* Heading */}
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="section-heading animate-slide-up">
           <span className="section-kicker">Toolbox</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 id="skills-heading" className="text-4xl md:text-5xl font-bold mb-4">
             Technical <span className="text-gradient">Skills</span>
           </h2>
 
@@ -93,12 +94,12 @@ const Skills = () => {
         </div>
 
         {/* Skill grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
 
           {skillCategories.map((category, index) => (
             <Card
               key={index}
-              className="glass-card interactive-card group p-6 animate-slide-up"
+              className="glass-card interactive-card group h-full p-5 animate-slide-up sm:p-6"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
 

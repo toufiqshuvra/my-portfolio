@@ -2,24 +2,24 @@ import { Card } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
+    <section id="about" className="section-shell" aria-labelledby="about-heading">
+      <div className="site-container">
 
         {/* Heading */}
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="section-heading animate-slide-up">
           <span className="section-kicker">Who I Am</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 id="about-heading" className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
           <div className="section-underline"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid items-center gap-8 md:grid-cols-2 lg:gap-12">
 
           {/* LEFT - Summary */}
           <div className="animate-slide-up">
 
-            <Card className="glass-card interactive-card p-8 shadow-elegant">
+            <Card className="glass-card interactive-card p-6 shadow-elegant sm:p-8">
 
               <h3 className="text-2xl font-bold mb-4 text-primary">
                 Professional Summary
@@ -46,7 +46,7 @@ const About = () => {
           <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
 
             {/* Frontend */}
-            <Card className="glass-card interactive-card group p-6">
+            <Card className="glass-card interactive-card group p-5 sm:p-6">
               <div className="flex items-start gap-4">
 
                 <div className="icon-tile">
@@ -68,7 +68,7 @@ const About = () => {
             </Card>
 
             {/* UI/UX */}
-            <Card className="glass-card interactive-card group p-6">
+            <Card className="glass-card interactive-card group p-5 sm:p-6">
               <div className="flex items-start gap-4">
 
                 <div className="icon-tile bg-accent/10 group-hover:bg-accent/20">
@@ -90,7 +90,7 @@ const About = () => {
             </Card>
 
             {/* WordPress / CMS */}
-            <Card className="glass-card interactive-card group p-6">
+            <Card className="glass-card interactive-card group p-5 sm:p-6">
               <div className="flex items-start gap-4">
 
                 <div className="icon-tile">
