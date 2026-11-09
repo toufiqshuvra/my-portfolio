@@ -39,7 +39,7 @@ const Hero = () => {
             </h2>
 
             <p className="mb-8 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Frontend-focused Software Engineer with 2+ years of experience in building scalable, SEO-optimized, and performance-driven web applications.
+              Frontend-focused Software Engineer with 3+ years of experience in building scalable, SEO-optimized, and performance-driven web applications.
               Specialized in React.js, Next.js, Svelte, Astro, and TypeScript. Experienced in developing production-grade dashboards, enterprise UI systems, and cloud-integrated business solutions.
             </p>
 
