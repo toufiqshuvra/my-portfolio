@@ -1,73 +1,10 @@
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
+import { projects } from "@/data/projects";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Esther Group",
-      url: "https://www.estherventures.com/",
-      description:
-        "Developed a modern, scalable CMS-driven platform with Svelte and Tailwind CSS, integrating Directus for content management and performance optimization.",
-      technologies: ["Svelte", "Tailwind CSS", "Directus", "CMS"],
-      category: "Full Stack"
-    },
-    {
-      title: "JU Reunion (Jahangirnagar University Global Reunion)",
-      url: "https://jureunion.org/",
-      description:
-        "Designed and developed a full-featured alumni reunion platform with scalable frontend architecture and backend API integration for global users.",
-      technologies: ["Svelte", "JavaScript", "Backend API"],
-      category: "Full Stack"
-    },
-
-    // NEW PROJECT 1
-    {
-      title: "InNeed Cloud",
-      url: "https://inneedcloud.com/",
-      description:
-        "Developed and maintained the company portfolio website showcasing cloud-native solutions, services, and enterprise digital products with modern responsive UI.",
-      technologies: ["Svelte", "Next.js", "Tailwind CSS", "UI/UX"],
-      category: "Frontend"
-    },
-
-    // NEW PROJECT 2
-    {
-      title: "HomeGrown Platform",
-      url: "https://gohomegrown.org/",
-      description:
-        "A health-focused digital platform promoting nutrition and physical activity, especially for children with Down syndrome, built with a user-centered design approach.",
-      technologies: ["Frontend Development", "UI/UX", "Web Optimization"],
-      category: "Frontend"
-    },
-
-    {
-      title: "NokshaSemi",
-      url : "https://nokshasemi.com/",
-      description:
-        "Built a high-performance frontend application using Astro and Tailwind CSS, focusing on speed, responsiveness, and user experience.",
-      technologies: ["Astro", "Tailwind CSS", "UI/UX"],
-      category: "Frontend"
-    },
-
-    {
-      title: "Million Al Minds",
-      url: "https://millionalminds.com/",
-      description:
-        "Built a high-performance frontend application using Svelte and Tailwind CSS, focusing on speed, responsiveness, and user experience.",
-      technologies: ["Svelte", "Tailwind CSS", "UI/UX"],
-      category: "Frontend"
-    },
-
-    {
-      title: "WordPress Projects Portfolio",
-      description:
-        "Maintained and customized multiple WordPress websites including IAJ Online, Esther Ventures, and Goat & Sheep Farmers Association with performance optimization and SEO improvements.",
-      technologies: ["WordPress", "PHP", "MySQL", "cPanel"],
-      category: "WordPress"
-    }
-  ];
-
   return (
     <section id="projects" className="section-shell" aria-labelledby="projects-heading">
       <div className="site-container">
@@ -111,8 +48,8 @@ const Projects = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`View live ${project.title} ${project.category.toLowerCase()} project by Md. Toufiqul Karim`}
-                    title={`View live ${project.title} project built with ${project.technologies.join(", ")}`}
+                    aria-label={`Visit the live ${project.title} website`}
+                    title={`Visit the live ${project.title} website`}
                     className="text-muted-foreground hover:text-primary transition-all hover:-translate-y-1 hover:scale-110"
                   >
                     <ExternalLink className="h-5 w-5" />
@@ -126,23 +63,41 @@ const Projects = () => {
                 {project.title}
               </h3>
 
+              {project.teamCollaboration && (
+                <p className="mb-3 text-sm font-medium text-primary">
+                  {project.roleLabel}
+                </p>
+              )}
+
               {/* Description */}
               <p className="mb-5 leading-relaxed text-muted-foreground">
                 {project.description}
               </p>
 
               {/* Tech stack */}
-              <div className="mt-auto flex flex-wrap gap-2">
-                {project.technologies.map((tech, i) => (
-                  <Badge
-                    key={i}
-                    variant="outline"
-                    className="chip-hover border-border/50 text-muted-foreground hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
-                  >
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
+              {project.technologies.length > 0 && (
+                <ul className="mt-auto flex flex-wrap gap-2" aria-label="Technologies">
+                  {project.technologies.map((tech) => (
+                    <li key={tech}>
+                      <Badge
+                        variant="outline"
+                        className="chip-hover border-border/50 text-muted-foreground hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
+                      >
+                        {tech}
+                      </Badge>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              <Link
+                to={`/projects/${project.slug}`}
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+                aria-label={`Read the ${project.title} project details`}
+              >
+                View project details
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
 
             </Card>
           ))}

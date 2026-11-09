@@ -6,6 +6,12 @@ engineer specializing in React.js, Next.js, Svelte, Astro, and TypeScript.
 ## Portfolio
 
 - [Homepage](https://toufiqulkarim.netlify.app/): Profile, skills, experience, projects, education, and contact details.
+- [About](https://toufiqulkarim.netlify.app/about): Background and professional approach.
+- [Experience](https://toufiqulkarim.netlify.app/experience): Documented professional responsibilities.
+- [Projects](https://toufiqulkarim.netlify.app/projects): Project directory with contribution descriptions.
+- [Skills](https://toufiqulkarim.netlify.app/skills): Technical skills grouped by category.
+- [Education](https://toufiqulkarim.netlify.app/education): Academic background and qualifications.
+- [Contact](https://toufiqulkarim.netlify.app/contact): Professional contact information and profiles.
 - [Markdown profile](https://toufiqulkarim.netlify.app/index.md): The portfolio content in Markdown.
 
 ## Experience and projects
@@ -16,6 +22,27 @@ engineer specializing in React.js, Next.js, Svelte, Astro, and TypeScript.
 - [HomeGrown Platform](https://gohomegrown.org/): Health-focused digital platform.
 - [NokshaSemi](https://nokshasemi.com/): Astro frontend application.
 - [Million Al Minds](https://millionalminds.com/): Svelte frontend application.
+- [WordPress projects](https://toufiqulkarim.netlify.app/projects/wordpress-projects): Website maintenance and customization.
+
+## Team collaboration
+
+These are frontend development contributions made as part of development teams,
+not claims of sole ownership or authorship.
+
+- [VITALSS](https://toufiqulkarim.netlify.app/projects/vitalss): [live website](https://vitalss.org/).
+- [MyCaregivingCircle](https://toufiqulkarim.netlify.app/projects/my-caregiving-circle): [live website](https://mycaregivingcircle.org/).
+- [InNeed AI](https://toufiqulkarim.netlify.app/projects/inneed-ai): [live website](https://inneed.ai/).
+- [Translara](https://toufiqulkarim.netlify.app/projects/translara): [live website](https://translara.io/).
+
+## Project detail pages
+
+- [Esther Group](https://toufiqulkarim.netlify.app/projects/esther-group)
+- [JU Reunion](https://toufiqulkarim.netlify.app/projects/ju-reunion)
+- [InNeed Cloud](https://toufiqulkarim.netlify.app/projects/inneed-cloud)
+- [HomeGrown Platform](https://toufiqulkarim.netlify.app/projects/homegrown-platform)
+- [NokshaSemi](https://toufiqulkarim.netlify.app/projects/nokshasemi)
+- [Million Al Minds](https://toufiqulkarim.netlify.app/projects/million-al-minds)
+- [WordPress projects](https://toufiqulkarim.netlify.app/projects/wordpress-projects)
 
 ## Profiles and discovery
 

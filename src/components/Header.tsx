@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
+  { label: "About", href: "/about" },
+  { label: "Experience", href: "/experience" },
+  { label: "Projects", href: "/projects" },
+  { label: "Skills", href: "/skills" },
+  { label: "Education", href: "/education" },
 ];
 
-const contactLink = { label: "Contact", href: "#contact" };
+const contactLink = { label: "Contact", href: "/contact" };
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,34 +21,34 @@ const Header = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-background/85 shadow-[0_10px_35px_hsl(0_0%_0%/0.18)] backdrop-blur-xl">
       <div className="site-container flex h-16 items-center justify-between">
-        <a
-          href="#home"
+        <Link
+          to="/"
           className="group text-base font-bold text-foreground transition-colors hover:text-primary sm:text-lg"
           onClick={closeMenu}
           aria-label="Go to home section"
           title="Md. Toufiqul Karim frontend developer portfolio homepage"
         >
           Toufiqul <span className="text-primary transition-colors group-hover:text-white">Karim</span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
-              href={item.href}
+              to={item.href}
               className="nav-hover-link"
               title={`Go to ${item.label} section of Md. Toufiqul Karim's frontend developer portfolio`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href={contactLink.href}
+          <Link
+            to={contactLink.href}
             className="ml-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-[0_0_30px_hsl(var(--primary)/0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             title="Contact Md. Toufiqul Karim for frontend software engineering opportunities in Dhaka, Bangladesh"
           >
             {contactLink.label}
-          </a>
+          </Link>
         </nav>
 
         <Button
@@ -73,24 +74,24 @@ const Header = () => {
       >
         <div className="site-container grid grid-cols-2 gap-2 min-[520px]:grid-cols-3">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
-              href={item.href}
+              to={item.href}
               className="nav-hover-link"
               onClick={closeMenu}
               title={`Go to ${item.label} section of Md. Toufiqul Karim's frontend developer portfolio`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href={contactLink.href}
+          <Link
+            to={contactLink.href}
             className="rounded-full bg-primary px-3 py-2 text-center text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             onClick={closeMenu}
             title="Contact Md. Toufiqul Karim for frontend software engineering opportunities in Dhaka, Bangladesh"
           >
             {contactLink.label}
-          </a>
+          </Link>
         </div>
       </nav>
     </header>

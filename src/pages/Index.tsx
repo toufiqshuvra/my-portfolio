@@ -7,10 +7,13 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Faq from "@/components/Faq";
+import Seo from "@/components/Seo";
 
 const Index = () => {
   return (
     <>
+      <Seo pathname="/" />
       <Header />
       <main className="min-h-screen overflow-x-hidden">
         <Hero />
@@ -20,6 +23,7 @@ const Index = () => {
         <Skills />
         <Education />
         <Contact />
+        <Faq />
       </main>
       <Footer />
     </>

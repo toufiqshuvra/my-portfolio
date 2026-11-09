@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://toufiqulkarim.netlify.app/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://toufiqulkarim.netlify.app/</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/about</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/experience</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/skills</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/education</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/contact</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/esther-group</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/ju-reunion</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/inneed-cloud</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/homegrown-platform</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/nokshasemi</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/million-al-minds</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/wordpress-projects</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/vitalss</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/my-caregiving-circle</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/inneed-ai</loc></url>
+  <url><loc>https://toufiqulkarim.netlify.app/projects/translara</loc></url>
 </urlset>
