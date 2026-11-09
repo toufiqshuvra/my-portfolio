@@ -26,7 +26,7 @@ const About = () => {
               </h3>
 
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I am a Frontend-focused Software Engineer with 2+ years of experience
+                I am a Frontend-focused Software Engineer with 3+ years of experience
                 building scalable, SEO-optimized, and performance-driven web applications.
                 I specialize in creating production-grade UI systems and business dashboards
                 using modern frontend technologies.
