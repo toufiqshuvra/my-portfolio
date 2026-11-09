@@ -39,7 +39,7 @@ const Hero = () => {
             </h2>
 
             <p className="mb-8 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Frontend-focused Software Engineer with 3+ years of experience in building scalable, SEO-optimized, and performance-driven web applications.
+              Frontend-focused Software Engineer with professional experience building scalable, SEO-optimized, and performance-driven web applications.
               Specialized in React.js, Next.js, Svelte, Astro, and TypeScript. Experienced in developing production-grade dashboards, enterprise UI systems, and cloud-integrated business solutions.
             </p>
 
@@ -117,7 +117,6 @@ const Hero = () => {
                 width="512"
                 height="512"
                 loading="eager"
-                fetchPriority="high"
                 className="mx-auto w-full max-w-[18rem] rounded-2xl border-4 border-primary/20 shadow-elegant transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-primary/50 hover:shadow-glow sm:max-w-sm lg:max-w-md"
               />
 

@@ -89,7 +89,7 @@ const Skills = () => {
           <div className="section-underline"></div>
 
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Full-stack frontend engineer specializing in scalable web applications, cloud infrastructure, CMS platforms, and SEO-driven digital systems.
+            Frontend engineering alongside practical experience with cloud platforms, CMS tools, API integration, analytics, and SEO.
           </p>
         </div>
 
