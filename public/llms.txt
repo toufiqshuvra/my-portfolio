@@ -1,0 +1,31 @@
+# Md. Toufiqul Karim — Frontend-Focused Software Engineer
+
+Portfolio of Md. Toufiqul Karim Shuvra, a Dhaka-based frontend-focused software
+engineer specializing in React.js, Next.js, Svelte, Astro, and TypeScript.
+
+## Portfolio
+
+- [Homepage](https://toufiqulkarim.netlify.app/): Profile, skills, experience, projects, education, and contact details.
+- [Markdown profile](https://toufiqulkarim.netlify.app/index.md): The portfolio content in Markdown.
+
+## Experience and projects
+
+- [Esther Group](https://www.estherventures.com/): Svelte and Directus CMS platform.
+- [JU Reunion](https://jureunion.org/): Global alumni reunion platform.
+- [InNeed Cloud](https://inneedcloud.com/): Cloud solutions company website.
+- [HomeGrown Platform](https://gohomegrown.org/): Health-focused digital platform.
+- [NokshaSemi](https://nokshasemi.com/): Astro frontend application.
+- [Million Al Minds](https://millionalminds.com/): Svelte frontend application.
+
+## Profiles and discovery
+
+- [GitHub](https://github.com/toufiqshuvra)
+- [LinkedIn](https://www.linkedin.com/in/md-toufiqul-karim-ba1952179/)
+- [Credly](https://www.credly.com/users/md-toufiqul-karim)
+- [Sitemap](https://toufiqulkarim.netlify.app/sitemap.xml)
+- [Robots policy](https://toufiqulkarim.netlify.app/robots.txt)
+
+## Contact
+
+- Email: [shuvrasarker54@gmail.com](mailto:shuvrasarker54@gmail.com)
+- Location: Dhaka, Bangladesh
